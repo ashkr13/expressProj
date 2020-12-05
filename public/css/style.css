@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(45deg, rgb(150, 228, 248), rgb(150, 251, 150));
+    font-family: 'Carter One', cursive!important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.navbar-brand{
+    margin-left: 8rem;
+}
+
+div#navbarNav {
+    margin-right: 8rem;
+}
+.navbar {
+    background-color: rgb(112, 176, 179);
+    color: black;
+}
+.nav-link, .navbar-brand{
+    color: black;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+h1.mainH1 {
+    font-size: 4.5rem;
+    color: rgb(255, 255, 255);
+    animation: main-animeh1 1.5s linear alternate;
+}
+@keyframes main-animeh1{
+    0%{       transform: scale3d(1.2, 2.5, 1.5)};
+    100%{    transform: scale3d(0, 0, 0)};
+}
+
+.footerDiv {
+    background-color: rgb(112, 176, 179);
+    width: 100%;
+    margin-top: auto;
+}
+
+.footerDiv p{
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+.btn {
+    margin: 2rem 3rem;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.carousel-item img{
+width: 40vw;
+height: 20rem;
+border: 6px solid black;
+}
+.carousel-inner{
+    box-shadow: 2px 2px 15px 10px #5a8cb7;
+
+}
+/*********************************************** CSS for Weather page *********************************/
+
+input#cityName {
+    width: 50vw;
+    border-radius: 2rem;
+    background-color: ghostwhite;
+    position: absolute;
+    border: none;
+    height: 3.2rem;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+button.searchBtn {
+    width: 10vw;
+    border-radius: 2rem;
+    background: #c94c4c;
+    border: 2px solid black;
+    position: absolute;
+     cursor: pointer;
+     height: 3.2rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    line-height: 0rem;
+}
+.searchBtn:hover{
+    background-color: black;
+    color: #c94c4c;
+}
+
+
+    .mainHeading {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 1.5em;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 22rem;
+}
+    .main {
+    display: flex;
+    border-radius: 28px;
+    height: 26em;
+    width: 60vw;
+    margin: 1% 20% 2% 20%;
+    background: linear-gradient(228deg, rgb(230, 205, 385), transparent);
+    box-shadow: 2px 2px 15px 10px cadetblue;
+}
+h4#tempStatus {
+    margin-top: 19rem;
+}
+
+
+.left {
+    width: 29vw;
+    position: relative;
+    height: 29.6em;
+}
+
+.right {
+    width: 49vw;
+    text-align: center;
+    margin-top: 10%;
+}
+h3 {
+    font-size: 2em;
+}
+
+.info h1{
+    margin-top: 4%;
+    font-size: 4em;
+    color: cornsilk;
+    animation: deg-anime 3s linear infinite alternate;
+}
+@keyframes deg-anime{
+    from{transform: translateX(-1rem)};
+    to{transform: translateX(3.4rem)};
+}
+p#day {
+    margin-top: 8%;
+    font-size: 1.2em;
+
+}
+#time{
+    margin-top: 4%;
+    font-size: 1.5em;
+    color: crimson;
+}
+.fas {
+    font-weight: 900;
+    font-size: 12em;
+    position: absolute;
+    margin-left: 22%;
+    margin-top: 32%;
+  animation: fas-anime 3s linear infinite alternate;
+}
+
+@keyframes fas-anime {
+  from {transform:scale(0.8)};
+  to {transform:scale(2.1)};
+}
+h4 {
+    display: flex;
+    margin-left: 41%;
+    margin-top: 91%;
+    font-size: 2em;
+    color: steelblue;
+    justify-content: center;
+}
+
+
+.fa-sun {
+    color: yellow;
+}
+.fa-cloud, .fa-smog{
+    color: rgba(168, 168, 168, 0.801);
+}
+a {
+    width: 15%;
+}
+#showBtn {
+    width: 100%;
+    height: 2em;
+    font-size: 1.5em;
+    background: #f7786b;
+    color: white;
+    border: none;
+    border-radius: 32px;
+}
+#hideBtn{
+    width: 15%;
+    height: 2em;
+    font-size: 1.5em;
+    background:#c94c4c;
+    color: white;
+    border: none;
+    border-radius: 32px;
+    margin-left: 2%;
+}
+
+
+#showBtn:hover{
+    background-color:#c94c4c;
+    color:#000;
+    cursor: pointer;
+}
+#hideBtn:hover{
+    background-color:#f7786b;
+    color: #000;
+    cursor: pointer;
+}
+
+.buttonBottom {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.main2 {
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 16%;
+    display: none;
+}
+
+.main2h2 {
+    padding: 20px;
+    border: 2px solid;
+    width: 80%;
+    margin: 2%;
+    background: linear-gradient(102deg, rgb(119, 248, 119), transparent);
+    color: currentColor;
+    border-radius: 12px;
+}
+
+/*********************************************** CSS for About page *********************************/
+
+
+.mainAbout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2.5rem;
+}
+
+.aboutMainleft img {
+    height: 27rem;
+}
+
+h2.abouth2 {
+    margin-bottom: 2rem;
+}
+
+h1.abouth2 {
+    text-align: center;
+    color: lightseagreen;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+h1.abouth2:hover{
+    animation: abouth1 2s linear alternate;
+}
+@keyframes abouth1{
+    0%{
+transform: skew(20deg);
+    }
+    100%{
+transform: skew(0deg);
+    }
+}
+
+p.aboutP {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.aboutMainleft {
+    margin-left: 8r;
+    margin-left: -5rem;
+}
+
+.aboutMainright {
+    border: 2px solid white;
+    padding: 3rem;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 34vw;
+    margin-right: 4rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    box-shadow: 2px 2px 15px 10px #000;
+}
+
+
+
+
+
+
